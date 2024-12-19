@@ -74,13 +74,13 @@ var config = {
                 if (target === 'cancel') {
                     w2ui.customers.reload();
                 } else if (target === 'excel') {
-                    
+
                 }
             }
         },
         multiSearch: true,
         searches: [
-            
+
         ],
         // reorderColumns: true,
         columns: [
@@ -96,7 +96,7 @@ var config = {
             { field: 'region', caption: 'Region', size: '150px', searchable: true, sortable: true, editable: { type: 'text' } }
         ],
         onAdd: function (event) {
-            
+
         },
         onRequest: function (event) {
             console.log('-- server call --');
@@ -106,22 +106,22 @@ var config = {
             event.onComplete = function () {
                 if (event.status === "success") {
                     console.log('---On save onComplete: ' + event.status);
-                    
+
                 }
             }
         },
         onChange: function (event) {
             console.log(event);
-            
+
         },
         onDblClick: function (event) {
             console.log('Column is: ' + event.column + ' and recid is: ' + event.recid);
-            if(event.column === 0) {
-                
+            if (event.column === 0) {
+
             }
         },
         onKeydown: function (event) {
-            
+
         }
     },
     product_details: {
@@ -147,9 +147,9 @@ var config = {
             onClick: function (target, data) {
                 console.log("--- onClick: " + target);
                 if (target === 'cancel') {
-                    w2ui.productdetails.reload();
+                    w2ui.product_details.reload();
                 } else if (target === 'excel') {
-                    
+
                 }
             }
         },
@@ -175,7 +175,7 @@ var config = {
             { field: 'supplierRegion', caption: 'Supplier Region', size: '150px', searchable: true, sortable: true, editable: { type: 'text' } }
         ],
         onAdd: function (event) {
-            
+
         },
         onRequest: function (event) {
             console.log('-- server call --');
@@ -185,22 +185,22 @@ var config = {
             event.onComplete = function () {
                 if (event.status === "success") {
                     console.log('---On save onComplete: ' + event.status);
-                    
+
                 }
             }
         },
         onChange: function (event) {
             console.log(event);
-            
+
         },
         onDblClick: function (event) {
             console.log('Column is: ' + event.column + ' and recid is: ' + event.recid);
-            if(event.column === 0) {
-                
+            if (event.column === 0) {
+
             }
         },
         onKeydown: function (event) {
-            
+
         }
     },
     orders: {
@@ -228,7 +228,7 @@ var config = {
                 if (target === 'cancel') {
                     w2ui.orders.reload();
                 } else if (target === 'excel') {
-                    
+
                 }
             }
         },
@@ -259,7 +259,7 @@ var config = {
             { field: 'shipperCompanyName', caption: 'Shipper Name', size: '150px', searchable: true, sortable: true }
         ],
         onAdd: function (event) {
-            
+
         },
         onRequest: function (event) {
             console.log('-- server call --');
@@ -269,22 +269,22 @@ var config = {
             event.onComplete = function () {
                 if (event.status === "success") {
                     console.log('---On save onComplete: ' + event.status);
-                    
+
                 }
             }
         },
         onChange: function (event) {
             console.log(event);
-            
+
         },
         onDblClick: function (event) {
             console.log('Column is: ' + event.column + ' and recid is: ' + event.recid);
-            if(event.column === 0) {
-                
+            if (event.column === 0) {
+
             }
         },
         onKeydown: function (event) {
-            
+
         },
         onLoad: function (event) {
             console.log("Loading ...");
@@ -296,7 +296,7 @@ var config = {
 };
 
 $(function () {
-    
+
     // initialization
     // w2utils.settings.dataType = 'HTTP';
     w2utils.settings.dateFormat = 'yyyy-mm-dd';
